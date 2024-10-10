@@ -1,0 +1,19 @@
+<h1 class="text-center my-4">Stupid Coaching</h1>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <blockquote class="blockquote">
+        <p><%= @question %></p>
+        <footer class="blockquote-footer">You</footer>
+      </blockquote>
+
+      <div class="alert alert-warning">
+        <p><strong><%= @answer %></strong></p>
+        <footer class="blockquote-footer">Your coach</footer>
+      </div>
+
+      <%= link_to "Ask another question", ask_path, class: "btn btn-link mt-3" %>
+    </div>
+  </div>
+</div>
